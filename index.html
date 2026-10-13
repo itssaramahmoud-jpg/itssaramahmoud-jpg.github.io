@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102448">
+<meta name="description" content="Sarah Mahmoud Abdallah's professional portfolio covering pharmaceutical production technology, sales, customer relations, and web development.">
+<title>Sarah Mahmoud Abdallah | Portfolio</title>
+
+<style>
+:root {
+  --navy: #102448;
+  --blue: #2563eb;
+  --light-blue: #eff6ff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  background: #f4f7fc;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+a {
+  transition: 0.2s ease;
+}
+
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 16px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 18px #10244818;
+}
+
+nav {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid #93c5fd;
+  border-radius: 25px;
+  color: white;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #102448, #1d4b83);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.hero-inner {
+  max-width: 850px;
+  margin: auto;
+}
+
+.avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 38px;
+  font-weight: 800;
+  border: 3px solid white;
+  box-shadow: 0 8px 25px #00000020;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.hero .role {
+  color: #bfdbfe;
+  font-size: clamp(16px, 2.5vw, 21px);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 10px auto;
+  color: #e2e8f0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid #bfdbfe;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: #ffffff15;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 38px auto;
+}
+
+.section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 24px #10244808;
+}
+
+.section h2 {
+  color: #163d70;
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+.section p {
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.section-intro {
+  margin-bottom: 18px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.skill {
+  background: var(--light-blue);
+  border: 1px solid #dbeafe;
+  padding: 13px 15px;
+  border-radius: 10px;
+  color: #1e40af;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item {
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 14px;
+}
+
+.item h3 {
+  color: #1e3a5f;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.item .meta {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: #eaf2ff;
+  color: #1e40af;
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.contact-card {
+  background: #f8fbff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card strong {
+  display: block;
+  color: #163d70;
+  margin-bottom: 5px;
+}
+
+.contact-card a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--navy);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 3px 0;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 14px;
+    position: relative;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 55px 18px;
+  }
+
+  .container {
+    width: 92%;
+    margin: 24px auto;
+  }
+
+  .section {
+    padding: 21px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home" class="logo">Sarah.</a>
+
+    <div class="nav-links">
+      <a href="#about" data-ar="نبذة عني" data-en="About">About</a>
+      <a href="#skills" data-ar="المهارات" data-en="Skills">Skills</a>
+      <a href="#experience" data-ar="الخبرات" data-en="Experience">Experience</a>
+      <a href="#education" data-ar="التعليم" data-en="Education">Education</a>
+      <a href="#contact" data-ar="التواصل" data-en="Contact">Contact</a>
+      <button class="lang-btn" id="langBtn" type="button">العربية</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="avatar">S</div>
+
+    <h1>Sarah Mahmoud Abdallah</h1>
+
+    <p class="role"
+       data-ar="طالبة تكنولوجيا الصناعات الدوائية"
+       data-en="Pharmaceutical Production Technology Student">
+      Pharmaceutical Production Technology Student
+    </p>
+
+    <p data-ar="مهتمة بمجالات الصناعات الدوائية، وضمان الجودة، والمبيعات، وتطوير الويب والذكاء الاصطناعي."
+       data-en="Interested in pharmaceutical manufacturing, quality assurance, sales, web development, and artificial intelligence.">
+      Interested in pharmaceutical manufacturing, quality assurance, sales, web development, and artificial intelligence.
+    </p>
+
+    <p data-ar="أسعى إلى تطوير مهاراتي باستمرار واكتساب خبرة عملية تجمع بين خلفيتي الأكاديمية ومهارات التواصل والتكنولوجيا."
+       data-en="I am committed to continuous learning and gaining practical experience that combines my academic background with communication and technology skills.">
+      I am committed to continuous learning and gaining practical experience that combines my academic background with communication and technology skills.
+    </p>
+
+    <div class="buttons">
+      <a href="#contact" class="btn btn-primary"
+         data-ar="تواصلي معي" data-en="Contact Me">Contact Me</a>
+
+      <a href="#about" class="btn btn-outline"
+         data-ar="اعرفي المزيد" data-en="Learn More">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="section" id="about">
+    <h2 data-ar="نبذة عني" data-en="About Me">About Me</h2>
+
+    <p data-ar="أنا سارة محمود عبد الله، طالبة في تكنولوجيا الصناعات الدوائية بجامعة برج العرب التكنولوجية في الإسكندرية. أهتم بفهم عمليات التصنيع الدوائي وجودة المنتجات، وأسعى إلى بناء مسار مهني يجمع بين دراستي والتعلم المستمر."
+       data-en="I am Sarah Mahmoud Abdallah, a Pharmaceutical Production Technology student at Borg El Arab Technological University in Alexandria, Egypt. I am interested in pharmaceutical manufacturing processes and product quality, and I aim to build a career supported by my studies and continuous learning.">
+      I am Sarah Mahmoud Abdallah, a Pharmaceutical Production Technology student at Borg El Arab Technological University in Alexandria, Egypt. I am interested in pharmaceutical manufacturing processes and product quality, and I aim to build a career supported by my studies and continuous learning.
+    </p>
+
+    <p data-ar="لدي خبرة في التعامل مع العملاء والمبيعات والتواصل الهاتفي، كما أتعلم تطوير الويب وأمتلك معرفة تأسيسية بلغة C++. أرحب بفرص التعلم والتدريب والعمل التي تساعدني على تطوير قدراتي."
+       data-en="I have experience in customer service, sales, and telephone communication. I am also learning web development and have foundational knowledge of C++. I welcome learning, training, and work opportunities that help me develop my capabilities.">
+      I have experience in customer service, sales, and telephone communication. I am also learning web development and have foundational knowledge of C++. I welcome learning, training, and work opportunities that help me develop my capabilities.
+    </p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 data-ar="المهارات" data-en="Skills">Skills</h2>
+
+    <p class="section-intro"
+       data-ar="مهارات أعمل على تطويرها من خلال دراستي وتجربتي والتعلم الذاتي."
+       data-en="Skills I have developed through my studies, experience, and self-learning.">
+      Skills I have developed through my studies, experience, and self-learning.
+    </p>
+
+    <div class="skills">
+      <div class="skill" data-ar="التواصل وخدمة العملاء" data-en="Communication & Customer Service">Communication & Customer Service</div>
+      <div class="skill" data-ar="المبيعات والتسويق الهاتفي" data-en="Sales & Telemarketing">Sales & Telemarketing</div>
+      <div class="skill" data-ar="التفاعل مع العملاء" data-en="Customer Engagement">Customer Engagement</div>
+      <div class="skill" data-ar="الاستماع الفعّال" data-en="Active Listening">Active Listening</div>
+      <div class="skill" data-ar="شرح المنتجات والتعامل مع الاعتراضات" data-en="Product Explanation & Objection Handling">Product Explanation & Objection Handling</div>
+      <div class="skill" data-ar="حل المشكلات والتكيف" data-en="Problem-Solving & Adaptability">Problem-Solving & Adaptability</div>
+      <div class="skill" data-ar="أساسيات التسويق الرقمي" data-en="Digital Marketing Fundamentals">Digital Marketing Fundamentals</div>
+      <div class="skill" data-ar="أساسيات البرمجة بلغة C++" data-en="C++ Programming Fundamentals">C++ Programming Fundamentals</div>
+      <div class="skill" data-ar="HTML وCSS وJavaScript - قيد التعلم" data-en="HTML, CSS & JavaScript - Learning">HTML, CSS & JavaScript - Learning</div>
+      <div class="skill" data-ar="خلفية أكاديمية في الأتمتة والذكاء الاصطناعي" data-en="Academic Exposure to Automation & AI">Academic Exposure to Automation & AI</div>
+      <div class="skill" data-ar="التعلم المستمر" data-en="Continuous Learning">Continuous Learning</div>
+      <div class="skill" data-ar="العمل الجماعي" data-en="Teamwork">Teamwork</div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h2 data-ar="الخبرات والتدريب" data-en="Experience & Training">Experience & Training</h2>
+
+    <div class="item">
+      <h3 data-ar="المبيعات وخدمة العملاء في صيدلية" data-en="Pharmacy Sales & Customer Service">Pharmacy Sales & Customer Service</h3>
+      <p class="meta"
+         data-ar="خبرة عملية — سنتان"
+         data-en="Practical Experience — 2 Years">
+        Practical Experience — 2 Years
+      </p>
+      <p data-ar="خبرة في التعامل مع العملاء، والمساعدة في تلبية احتياجاتهم، والتواصل بوضوح، والتعامل المهني مع الاستفسارات."
+         data-en="Experience interacting with customers, helping address their needs, communicating clearly, and handling inquiries professionally.">
+        Experience interacting with customers, helping address their needs, communicating clearly, and handling inquiries professionally.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 data-ar="التسويق الهاتفي والتواصل مع العملاء" data-en="Telemarketing & Customer Communication">Telemarketing & Customer Communication</h3>
+      <p class="meta"
+         data-ar="خبرة متقطعة خلال عام"
+         data-en="Intermittent Experience Over One Year">
+        Intermittent Experience Over One Year
+      </p>
+      <p data-ar="تجارب في التواصل الهاتفي مع العملاء، وعرض المعلومات، وتطوير أساليب التواصل والإقناع."
+         data-en="Intermittent experience in telephone-based customer communication, presenting information, and developing communication and persuasion skills.">
+        Intermittent experience in telephone-based customer communication, presenting information, and developing communication and persuasion skills.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 data-ar="تدريب في مجال الصناعات الدوائية" data-en="Pharmaceutical Industry Training">Pharmaceutical Industry Training</h3>
+      <p class="meta">Infra Pharm & Pharco Corporation</p>
+      <p data-ar="تدريب صناعي مرتبط بمجال الصناعات الدوائية، يدعم اهتمامي بعمليات التصنيع وفهم بيئة العمل في شركات الأدوية."
+         data-en="Industrial training related to pharmaceutical manufacturing, supporting my interest in production processes and understanding the pharmaceutical workplace.">
+        Industrial training related to pharmaceutical manufacturing, supporting my interest in production processes and understanding the pharmaceutical workplace.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <h2 data-ar="التعليم والاهتمامات المهنية" data-en="Education & Career Interests">Education & Career Interests</h2>
+
+    <div class="item">
+      <h3 data-ar="جامعة برج العرب التكنولوجية" data-en="Borg El Arab Technological University">Borg El Arab Technological University</h3>
+      <p class="meta"
+         data-ar="الإسكندرية، مصر"
+         data-en="Alexandria, Egypt">
+        Alexandria, Egypt
+      </p>
+      <p data-ar="التخصص: تكنولوجيا الصناعات الدوائية"
+         data-en="Field of Study: Pharmaceutical Production Technology">
+        Field of Study: Pharmaceutical Production Technology
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 data-ar="الاهتمامات المهنية" data-en="Professional Interests">Professional Interests</h3>
+      <div class="tags">
+        <span class="tag" data-ar="ضمان الجودة (QA)" data-en="Quality Assurance (QA)">Quality Assurance (QA)</span>
+        <span class="tag" data-ar="الصناعات الدوائية" data-en="Pharmaceutical Manufacturing">Pharmaceutical Manufacturing</span>
+        <span class="tag" data-ar="المبيعات" data-en="Sales">Sales</span>
+        <span class="tag" data-ar="خدمة العملاء" data-en="Customer Relations">Customer Relations</span>
+        <span class="tag" data-ar="تطوير الويب" data-en="Web Development">Web Development</span>
+        <span class="tag" data-ar="الأتمتة والذكاء الاصطناعي" data-en="Automation & AI">Automation & AI</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 data-ar="المشاريع والتعلم" data-en="Projects & Learning">Projects & Learning</h2>
+
+    <div class="item">
+      <h3 data-ar="الموقع الشخصي" data-en="Personal Portfolio Website">Personal Portfolio Website</h3>
+      <p data-ar="مشروع شخصي لتطبيق أساسيات HTML وCSS وJavaScript وعرض خلفيتي الأكاديمية ومهاراتي واهتماماتي المهنية."
+         data-en="A personal project applying HTML, CSS, and JavaScript fundamentals to present my academic background, skills, and professional interests.">
+        A personal project applying HTML, CSS, and JavaScript fundamentals to present my academic background, skills, and professional interests.
+      </p>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3 data-ar="التطوير المستمر" data-en="Continuous Development">Continuous Development</h3>
+      <p data-ar="أعمل على توسيع معرفتي في تطوير الويب والتسويق الرقمي ومجالات التكنولوجيا المرتبطة بأهدافي المهنية."
+         data-en="I am expanding my knowledge of web development, digital marketing, and technology fields aligned with my career goals.">
+        I am expanding my knowledge of web development, digital marketing, and technology fields aligned with my career goals.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 data-ar="تواصلي معي" data-en="Contact Me">Contact Me</h2>
+
+    <p data-ar="يسعدني التواصل بشأن فرص التدريب والعمل والتعاون المهني."
+       data-en="I welcome communication about training, employment, and professional collaboration opportunities.">
+      I welcome communication about training, employment, and professional collaboration opportunities.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <strong data-ar="البريد الإلكتروني" data-en="Email">Email</strong>
+        <a href="mailto:its.saramahmoud@gmail.com">its.saramahmoud@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <strong data-ar="رقم الهاتف" data-en="Phone">Phone</strong>
+        <a href="tel:+201101874480" dir="ltr">+20 110 187 4480</a>
+      </div>
+
+      <div class="contact-card">
+        <strong>LinkedIn</strong>
+        <a href="https://www.linkedin.com/in/sarah-mahmoud-885255374"
+           target="_blank" rel="noopener noreferrer">
+          View LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <strong>GitHub</strong>
+        <a href="https://github.com/itssaramahmoud-jpg"
+           target="_blank" rel="noopener noreferrer">
+          View GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Sarah Mahmoud Abdallah</p>
+  <p data-ar="التعلم المستمر خطوة نحو مستقبل أفضل."
+     data-en="Continuous learning is a step toward a better future.">
+    Continuous learning is a step toward a better future.
+  </p>
+</footer>
+
+<script>
+(function () {
+  const langBtn = document.getElementById("langBtn");
+
+  function setLanguage(lang) {
+    const isArabic = lang === "ar";
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isArabic ? "rtl" : "ltr";
+
+    document.querySelectorAll("[data-ar][data-en]").forEach(function (element) {
+      element.textContent = element.getAttribute("data-" + lang);
+    });
+
+    langBtn.textContent = isArabic ? "English" : "العربية";
+    document.title = isArabic
+      ? "سارة محمود عبد الله | الملف الشخصي"
+      : "Sarah Mahmoud Abdallah | Portfolio";
+  }
+
+  langBtn.addEventListener("click", function () {
+    const nextLang = document.documentElement.lang === "ar" ? "en" : "ar";
+    setLanguage(nextLang);
+  });
+
+  setLanguage("en");
+})();
+</script>
+
+</body>
+  </html>
+        
