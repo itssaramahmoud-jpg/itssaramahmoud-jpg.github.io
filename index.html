@@ -1,614 +1,851 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#102448">
-<meta name="description" content="Sarah Mahmoud Abdallah's professional portfolio covering pharmaceutical production technology, sales, customer relations, and web development.">
-<title>Sarah Mahmoud Abdallah | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root {
-  --navy: #102448;
-  --blue: #2563eb;
-  --light-blue: #eff6ff;
-  --text: #1e293b;
-  --muted: #64748b;
-  --border: #e2e8f0;
-  --white: #ffffff;
-}
+    <title>Sarah Mahmoud Abdallah | Pharmaceutical Production Technology</title>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    <meta name="description" content="Sarah Mahmoud Abdallah - Pharmaceutical Production Technology student interested in pharmaceutical manufacturing, QA, QC, administrative support, customer support, AI and technology.">
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-body {
-  font-family: Arial, Tahoma, sans-serif;
-  background: #f4f7fc;
-  color: var(--text);
-  line-height: 1.8;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f19;
+            color: #f4f7fb;
+            line-height: 1.7;
+        }
 
-a {
-  transition: 0.2s ease;
-}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-header {
-  background: var(--navy);
-  color: var(--white);
-  padding: 16px 6%;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 4px 18px #10244818;
-}
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
 
-nav {
-  max-width: 1150px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
+        /* Navigation */
 
-.logo {
-  font-size: 25px;
-  font-weight: 800;
-  color: var(--white);
-  text-decoration: none;
-}
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 15, 25, 0.95);
+            border-bottom: 1px solid #20283a;
+            backdrop-filter: blur(10px);
+        }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 17px;
-}
+        .nav-container {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
 
-.nav-links a {
-  color: #e2e8f0;
-  text-decoration: none;
-  font-size: 14px;
-}
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
 
-.nav-links a:hover {
-  color: #93c5fd;
-}
+        .logo span {
+            color: #7c8cff;
+        }
 
-.lang-btn {
-  background: transparent;
-  border: 1px solid #93c5fd;
-  border-radius: 25px;
-  color: white;
-  padding: 7px 15px;
-  cursor: pointer;
-  font-size: 13px;
-}
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
 
-.hero {
-  background: linear-gradient(135deg, #102448, #1d4b83);
-  color: white;
-  text-align: center;
-  padding: 85px 20px;
-}
+        .nav-links a {
+            color: #c9d1df;
+            font-size: 15px;
+            transition: 0.3s;
+        }
 
-.hero-inner {
-  max-width: 850px;
-  margin: auto;
-}
+        .nav-links a:hover {
+            color: #8c9aff;
+        }
 
-.avatar {
-  width: 105px;
-  height: 105px;
-  border-radius: 50%;
-  background: #dbeafe;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  font-size: 38px;
-  font-weight: 800;
-  border: 3px solid white;
-  box-shadow: 0 8px 25px #00000020;
-}
+        /* Hero */
 
-.hero h1 {
-  font-size: clamp(30px, 5vw, 48px);
-  line-height: 1.3;
-  margin-bottom: 12px;
-}
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+        }
 
-.hero .role {
-  color: #bfdbfe;
-  font-size: clamp(16px, 2.5vw, 21px);
-  font-weight: bold;
-  margin-bottom: 12px;
-}
+        .hero-content {
+            max-width: 850px;
+        }
 
-.hero p {
-  max-width: 720px;
-  margin: 10px auto;
-  color: #e2e8f0;
-}
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 28px;
-}
+        .hero h1 span {
+            color: #8794ff;
+        }
 
-.btn {
-  display: inline-block;
-  padding: 11px 22px;
-  border-radius: 9px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
+        .hero h2 {
+            font-size: clamp(21px, 3vw, 30px);
+            color: #d2d8e5;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
 
-.btn-primary {
-  background: var(--blue);
-  color: white;
-}
+        .hero p {
+            max-width: 760px;
+            color: #aeb8c9;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
 
-.btn-primary:hover {
-  background: #1d4ed8;
-  transform: translateY(-2px);
-}
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-.btn-outline {
-  border: 1px solid #bfdbfe;
-  color: white;
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 23px;
+            border-radius: 8px;
+            border: 1px solid #7c8cff;
+            transition: 0.3s;
+            font-weight: 600;
+        }
 
-.btn-outline:hover {
-  background: #ffffff15;
-}
+        .btn-primary {
+            background: #7c8cff;
+            color: #ffffff;
+        }
 
-.container {
-  width: 90%;
-  max-width: 1050px;
-  margin: 38px auto;
-}
+        .btn-primary:hover {
+            background: #6877ef;
+        }
 
-.section {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 30px;
-  margin-bottom: 24px;
-  box-shadow: 0 5px 24px #10244808;
-}
+        .btn-secondary {
+            color: #dfe4ee;
+        }
 
-.section h2 {
-  color: #163d70;
-  font-size: 25px;
-  margin-bottom: 17px;
-}
+        .btn-secondary:hover {
+            background: #171e2d;
+        }
 
-.section p {
-  color: #475569;
-  margin-bottom: 10px;
-}
+        /* Sections */
 
-.section-intro {
-  margin-bottom: 18px;
-}
+        section {
+            padding: 90px 0;
+        }
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-  gap: 12px;
-  margin-top: 18px;
-}
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
 
-.skill {
-  background: var(--light-blue);
-  border: 1px solid #dbeafe;
-  padding: 13px 15px;
-  border-radius: 10px;
-  color: #1e40af;
-  font-weight: bold;
-  font-size: 14px;
-}
+        .section-subtitle {
+            color: #9da8bb;
+            margin-bottom: 40px;
+        }
 
-.item {
-  background: #f8fbff;
-  border: 1px solid #dbeafe;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 14px;
-}
+        .card {
+            background: #111827;
+            border: 1px solid #222c40;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 22px;
+        }
 
-.item h3 {
-  color: #1e3a5f;
-  font-size: 18px;
-  margin-bottom: 7px;
-}
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
 
-.item .meta {
-  color: var(--blue);
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
+        .card h4 {
+            color: #8996ff;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
+        .card p {
+            color: #b5bfce;
+        }
 
-.tag {
-  display: inline-block;
-  background: #eaf2ff;
-  color: #1e40af;
-  border-radius: 20px;
-  padding: 4px 11px;
-  font-size: 12px;
-}
+        .card ul {
+            margin-top: 15px;
+            padding-left: 22px;
+            color: #b5bfce;
+        }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
-  margin-top: 20px;
-}
+        .card li {
+            margin-bottom: 8px;
+        }
 
-.contact-card {
-  background: #f8fbff;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
-  overflow-wrap: anywhere;
-}
+        .date {
+            color: #8996ff;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
 
-.contact-card strong {
-  display: block;
-  color: #163d70;
-  margin-bottom: 5px;
-}
+        /* About */
 
-.contact-card a {
-  color: #1d4ed8;
-  text-decoration: none;
-}
+        .about-text {
+            max-width: 950px;
+            color: #b8c1d0;
+            font-size: 17px;
+        }
 
-.contact-card a:hover {
-  text-decoration: underline;
-}
+        .about-text p {
+            margin-bottom: 18px;
+        }
 
-footer {
-  background: var(--navy);
-  color: #cbd5e1;
-  text-align: center;
-  padding: 25px 15px;
-  font-size: 13px;
-}
+        /* Skills */
 
-footer p {
-  margin: 3px 0;
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
 
-@media (max-width: 650px) {
-  header {
-    padding: 14px;
-    position: relative;
-  }
+        .skill-card {
+            background: #111827;
+            border: 1px solid #222c40;
+            border-radius: 12px;
+            padding: 22px;
+        }
 
-  nav {
-    justify-content: center;
-  }
+        .skill-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
 
-  .nav-links {
-    gap: 12px;
-  }
+        .skill-card p {
+            color: #aeb8c9;
+            font-size: 15px;
+        }
 
-  .hero {
-    padding: 55px 18px;
-  }
+        /* Lists */
 
-  .container {
-    width: 92%;
-    margin: 24px auto;
-  }
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
 
-  .section {
-    padding: 21px;
-  }
+        .simple-list {
+            list-style: none;
+        }
 
-  .section h2 {
-    font-size: 22px;
-  }
+        .simple-list li {
+            background: #111827;
+            border: 1px solid #222c40;
+            padding: 13px 17px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: #c1cad7;
+        }
 
-  .skills {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+        /* Contact */
 
-@media (max-width: 380px) {
-  .skills {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contact-item {
+            background: #111827;
+            border: 1px solid #222c40;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 7px;
+            color: #ffffff;
+        }
+
+        .contact-item a {
+            color: #8996ff;
+            word-break: break-word;
+        }
+
+        /* Footer */
+
+        footer {
+            border-top: 1px solid #20283a;
+            padding: 35px 0;
+            text-align: center;
+            color: #8791a3;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 800px) {
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+
+            .nav-links a {
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 90px 0 70px;
+            }
+
+            .two-column,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .nav-container {
+                align-items: flex-start;
+                padding: 15px 0;
+            }
+
+            .nav-links {
+                gap: 8px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-  <nav>
-    <a href="#home" class="logo">Sarah.</a>
+<!-- Navigation -->
 
-    <div class="nav-links">
-      <a href="#about" data-ar="نبذة عني" data-en="About">About</a>
-      <a href="#skills" data-ar="المهارات" data-en="Skills">Skills</a>
-      <a href="#experience" data-ar="الخبرات" data-en="Experience">Experience</a>
-      <a href="#education" data-ar="التعليم" data-en="Education">Education</a>
-      <a href="#contact" data-ar="التواصل" data-en="Contact">Contact</a>
-      <button class="lang-btn" id="langBtn" type="button">العربية</button>
+<nav>
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            Sarah<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
     </div>
-  </nav>
+</nav>
+
+
+<!-- Hero -->
+
+<header class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h1>
+                Sarah Mahmoud <span>Abdallah</span>
+            </h1>
+
+            <h2>
+                Pharmaceutical Production Technology Student
+            </h2>
+
+            <p>
+                Administrative Support | Data Entry | Customer Support |
+                Pharmaceutical Technology
+            </p>
+
+            <p>
+                Fourth-year Pharmaceutical Production Technology student
+                interested in pharmaceutical manufacturing, Quality Assurance,
+                Quality Control, customer support, administrative work,
+                Artificial Intelligence, automation, and web development.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Contact Me
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <div class="avatar">S</div>
 
-    <h1>Sarah Mahmoud Abdallah</h1>
+<!-- About -->
 
-    <p class="role"
-       data-ar="طالبة تكنولوجيا الصناعات الدوائية"
-       data-en="Pharmaceutical Production Technology Student">
-      Pharmaceutical Production Technology Student
-    </p>
+<section id="about">
 
-    <p data-ar="مهتمة بمجالات الصناعات الدوائية، وضمان الجودة، والمبيعات، وتطوير الويب والذكاء الاصطناعي."
-       data-en="Interested in pharmaceutical manufacturing, quality assurance, sales, web development, and artificial intelligence.">
-      Interested in pharmaceutical manufacturing, quality assurance, sales, web development, and artificial intelligence.
-    </p>
+    <div class="container">
 
-    <p data-ar="أسعى إلى تطوير مهاراتي باستمرار واكتساب خبرة عملية تجمع بين خلفيتي الأكاديمية ومهارات التواصل والتكنولوجيا."
-       data-en="I am committed to continuous learning and gaining practical experience that combines my academic background with communication and technology skills.">
-      I am committed to continuous learning and gaining practical experience that combines my academic background with communication and technology skills.
-    </p>
+        <h2 class="section-title">About Me</h2>
 
-    <div class="buttons">
-      <a href="#contact" class="btn btn-primary"
-         data-ar="تواصلي معي" data-en="Contact Me">Contact Me</a>
+        <p class="section-subtitle">
+            Pharmaceutical Production Technology | Continuous Learning | Technology
+        </p>
 
-      <a href="#about" class="btn btn-outline"
-         data-ar="اعرفي المزيد" data-en="Learn More">Learn More</a>
+        <div class="about-text">
+
+            <p>
+                I am Sarah Mahmoud Abdallah, a fourth-year Pharmaceutical
+                Production Technology student at Borg El Arab Technological
+                University in Borg El Arab City, Alexandria Governorate, Egypt.
+            </p>
+
+            <p>
+                I have one year of pharmacy experience, with exposure to
+                customer service and pharmaceutical products. Through my
+                academic studies and pharmaceutical training, I have developed
+                knowledge of pharmaceutical manufacturing, Good Manufacturing
+                Practices (GMP), Standard Operating Procedures (SOPs),
+                Quality Assurance (QA), and Quality Control (QC).
+            </p>
+
+            <p>
+                I have completed pharmaceutical industry training covering
+                Production, Quality Assurance, Quality Control, Research &
+                Development, Engineering, Warehouses, Product Development,
+                Supply Chain, and Biotechnology.
+            </p>
+
+            <p>
+                In addition to my pharmaceutical background, I am passionate
+                about Artificial Intelligence (AI), automation, and web
+                development. I have foundational knowledge of C++ and I am
+                currently learning HTML, CSS, and JavaScript.
+            </p>
+
+            <p>
+                I also have basic skills in Microsoft Word and Excel and an
+                interest in administrative support, data entry, customer
+                service, and digital technologies.
+            </p>
+
+            <p>
+                I am committed to continuous learning, developing practical
+                skills, and building practical experience across pharmaceutical
+                manufacturing, quality, customer relations, administrative
+                support, and technology.
+            </p>
+
+        </div>
+
     </div>
-  </div>
+
 </section>
 
-<main class="container">
 
-  <section class="section" id="about">
-    <h2 data-ar="نبذة عني" data-en="About Me">About Me</h2>
+<!-- Skills -->
 
-    <p data-ar="أنا سارة محمود عبد الله، طالبة في تكنولوجيا الصناعات الدوائية بجامعة برج العرب التكنولوجية في الإسكندرية. أهتم بفهم عمليات التصنيع الدوائي وجودة المنتجات، وأسعى إلى بناء مسار مهني يجمع بين دراستي والتعلم المستمر."
-       data-en="I am Sarah Mahmoud Abdallah, a Pharmaceutical Production Technology student at Borg El Arab Technological University in Alexandria, Egypt. I am interested in pharmaceutical manufacturing processes and product quality, and I aim to build a career supported by my studies and continuous learning.">
-      I am Sarah Mahmoud Abdallah, a Pharmaceutical Production Technology student at Borg El Arab Technological University in Alexandria, Egypt. I am interested in pharmaceutical manufacturing processes and product quality, and I aim to build a career supported by my studies and continuous learning.
-    </p>
+<section id="skills">
 
-    <p data-ar="لدي خبرة في التعامل مع العملاء والمبيعات والتواصل الهاتفي، كما أتعلم تطوير الويب وأمتلك معرفة تأسيسية بلغة C++. أرحب بفرص التعلم والتدريب والعمل التي تساعدني على تطوير قدراتي."
-       data-en="I have experience in customer service, sales, and telephone communication. I am also learning web development and have foundational knowledge of C++. I welcome learning, training, and work opportunities that help me develop my capabilities.">
-      I have experience in customer service, sales, and telephone communication. I am also learning web development and have foundational knowledge of C++. I welcome learning, training, and work opportunities that help me develop my capabilities.
-    </p>
-  </section>
+    <div class="container">
 
-  <section class="section" id="skills">
-    <h2 data-ar="المهارات" data-en="Skills">Skills</h2>
+        <h2 class="section-title">Skills</h2>
 
-    <p class="section-intro"
-       data-ar="مهارات أعمل على تطويرها من خلال دراستي وتجربتي والتعلم الذاتي."
-       data-en="Skills I have developed through my studies, experience, and self-learning.">
-      Skills I have developed through my studies, experience, and self-learning.
-    </p>
+        <p class="section-subtitle">
+            Skills developed through academic study, training, practical
+            experience, and self-learning.
+        </p>
 
-    <div class="skills">
-      <div class="skill" data-ar="التواصل وخدمة العملاء" data-en="Communication & Customer Service">Communication & Customer Service</div>
-      <div class="skill" data-ar="المبيعات والتسويق الهاتفي" data-en="Sales & Telemarketing">Sales & Telemarketing</div>
-      <div class="skill" data-ar="التفاعل مع العملاء" data-en="Customer Engagement">Customer Engagement</div>
-      <div class="skill" data-ar="الاستماع الفعّال" data-en="Active Listening">Active Listening</div>
-      <div class="skill" data-ar="شرح المنتجات والتعامل مع الاعتراضات" data-en="Product Explanation & Objection Handling">Product Explanation & Objection Handling</div>
-      <div class="skill" data-ar="حل المشكلات والتكيف" data-en="Problem-Solving & Adaptability">Problem-Solving & Adaptability</div>
-      <div class="skill" data-ar="أساسيات التسويق الرقمي" data-en="Digital Marketing Fundamentals">Digital Marketing Fundamentals</div>
-      <div class="skill" data-ar="أساسيات البرمجة بلغة C++" data-en="C++ Programming Fundamentals">C++ Programming Fundamentals</div>
-      <div class="skill" data-ar="HTML وCSS وJavaScript - قيد التعلم" data-en="HTML, CSS & JavaScript - Learning">HTML, CSS & JavaScript - Learning</div>
-      <div class="skill" data-ar="خلفية أكاديمية في الأتمتة والذكاء الاصطناعي" data-en="Academic Exposure to Automation & AI">Academic Exposure to Automation & AI</div>
-      <div class="skill" data-ar="التعلم المستمر" data-en="Continuous Learning">Continuous Learning</div>
-      <div class="skill" data-ar="العمل الجماعي" data-en="Teamwork">Teamwork</div>
-    </div>
-  </section>
+        <div class="skills-grid">
 
-  <section class="section" id="experience">
-    <h2 data-ar="الخبرات والتدريب" data-en="Experience & Training">Experience & Training</h2>
+            <div class="skill-card">
+                <h3>Microsoft Office</h3>
+                <p>
+                    Basic knowledge of Microsoft Word and Excel.
+                </p>
+            </div>
 
-    <div class="item">
-      <h3 data-ar="المبيعات وخدمة العملاء في صيدلية" data-en="Pharmacy Sales & Customer Service">Pharmacy Sales & Customer Service</h3>
-      <p class="meta"
-         data-ar="خبرة عملية — سنتان"
-         data-en="Practical Experience — 2 Years">
-        Practical Experience — 2 Years
-      </p>
-      <p data-ar="خبرة في التعامل مع العملاء، والمساعدة في تلبية احتياجاتهم، والتواصل بوضوح، والتعامل المهني مع الاستفسارات."
-         data-en="Experience interacting with customers, helping address their needs, communicating clearly, and handling inquiries professionally.">
-        Experience interacting with customers, helping address their needs, communicating clearly, and handling inquiries professionally.
-      </p>
-    </div>
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>
+                    Foundational knowledge of C++.
+                </p>
+            </div>
 
-    <div class="item">
-      <h3 data-ar="التسويق الهاتفي والتواصل مع العملاء" data-en="Telemarketing & Customer Communication">Telemarketing & Customer Communication</h3>
-      <p class="meta"
-         data-ar="خبرة متقطعة خلال عام"
-         data-en="Intermittent Experience Over One Year">
-        Intermittent Experience Over One Year
-      </p>
-      <p data-ar="تجارب في التواصل الهاتفي مع العملاء، وعرض المعلومات، وتطوير أساليب التواصل والإقناع."
-         data-en="Intermittent experience in telephone-based customer communication, presenting information, and developing communication and persuasion skills.">
-        Intermittent experience in telephone-based customer communication, presenting information, and developing communication and persuasion skills.
-      </p>
-    </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>
+                    Currently learning HTML, CSS, and JavaScript.
+                </p>
+            </div>
 
-    <div class="item">
-      <h3 data-ar="تدريب في مجال الصناعات الدوائية" data-en="Pharmaceutical Industry Training">Pharmaceutical Industry Training</h3>
-      <p class="meta">Infra Pharm & Pharco Corporation</p>
-      <p data-ar="تدريب صناعي مرتبط بمجال الصناعات الدوائية، يدعم اهتمامي بعمليات التصنيع وفهم بيئة العمل في شركات الأدوية."
-         data-en="Industrial training related to pharmaceutical manufacturing, supporting my interest in production processes and understanding the pharmaceutical workplace.">
-        Industrial training related to pharmaceutical manufacturing, supporting my interest in production processes and understanding the pharmaceutical workplace.
-      </p>
-    </div>
-  </section>
+            <div class="skill-card">
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Foundational knowledge of AI and ongoing learning.
+                </p>
+            </div>
 
-  <section class="section" id="education">
-    <h2 data-ar="التعليم والاهتمامات المهنية" data-en="Education & Career Interests">Education & Career Interests</h2>
+            <div class="skill-card">
+                <h3>Automation</h3>
+                <p>
+                    Interest in automation technologies and workflow improvement.
+                </p>
+            </div>
 
-    <div class="item">
-      <h3 data-ar="جامعة برج العرب التكنولوجية" data-en="Borg El Arab Technological University">Borg El Arab Technological University</h3>
-      <p class="meta"
-         data-ar="الإسكندرية، مصر"
-         data-en="Alexandria, Egypt">
-        Alexandria, Egypt
-      </p>
-      <p data-ar="التخصص: تكنولوجيا الصناعات الدوائية"
-         data-en="Field of Study: Pharmaceutical Production Technology">
-        Field of Study: Pharmaceutical Production Technology
-      </p>
+            <div class="skill-card">
+                <h3>Customer Service</h3>
+                <p>
+                    Customer communication, engagement, active listening,
+                    and product explanation.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <p>
+                    Written communication, customer engagement, and
+                    professional interaction.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Problem-Solving</h3>
+                <p>
+                    Problem-solving, adaptability, teamwork, and attention
+                    to detail.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data Organization</h3>
+                <p>
+                    Foundational skills in data organization and data entry.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Digital Marketing</h3>
+                <p>
+                    Foundational knowledge of digital marketing.
+                </p>
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="item">
-      <h3 data-ar="الاهتمامات المهنية" data-en="Professional Interests">Professional Interests</h3>
-      <div class="tags">
-        <span class="tag" data-ar="ضمان الجودة (QA)" data-en="Quality Assurance (QA)">Quality Assurance (QA)</span>
-        <span class="tag" data-ar="الصناعات الدوائية" data-en="Pharmaceutical Manufacturing">Pharmaceutical Manufacturing</span>
-        <span class="tag" data-ar="المبيعات" data-en="Sales">Sales</span>
-        <span class="tag" data-ar="خدمة العملاء" data-en="Customer Relations">Customer Relations</span>
-        <span class="tag" data-ar="تطوير الويب" data-en="Web Development">Web Development</span>
-        <span class="tag" data-ar="الأتمتة والذكاء الاصطناعي" data-en="Automation & AI">Automation & AI</span>
-      </div>
+</section>
+
+
+<!-- Experience -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <h2 class="section-title">Experience</h2>
+
+        <p class="section-subtitle">
+            Practical experience and professional development.
+        </p>
+
+
+        <div class="card">
+
+            <h3>Pharmacy Experience</h3>
+
+            <div class="date">
+                Duration: One Year
+            </div>
+
+            <ul>
+                <li>
+                    Gained experience in customer service and interacting
+                    with customers.
+                </li>
+
+                <li>
+                    Developed familiarity with pharmaceutical products
+                    and customer inquiries.
+                </li>
+
+                <li>
+                    Practiced communication and problem-solving in a
+                    pharmacy environment.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Customer Communication — Written Messages</h3>
+
+            <ul>
+                <li>
+                    Communicated with customers through written messages.
+                </li>
+
+                <li>
+                    Developed written communication and customer
+                    engagement skills.
+                </li>
+            </ul>
+
+        </div>
+
     </div>
-  </section>
 
-  <section class="section" id="projects">
-    <h2 data-ar="المشاريع والتعلم" data-en="Projects & Learning">Projects & Learning</h2>
+</section>
 
-    <div class="item">
-      <h3 data-ar="الموقع الشخصي" data-en="Personal Portfolio Website">Personal Portfolio Website</h3>
-      <p data-ar="مشروع شخصي لتطبيق أساسيات HTML وCSS وJavaScript وعرض خلفيتي الأكاديمية ومهاراتي واهتماماتي المهنية."
-         data-en="A personal project applying HTML, CSS, and JavaScript fundamentals to present my academic background, skills, and professional interests.">
-        A personal project applying HTML, CSS, and JavaScript fundamentals to present my academic background, skills, and professional interests.
-      </p>
-      <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-      </div>
+
+<!-- Training -->
+
+<section id="training">
+
+    <div class="container">
+
+        <h2 class="section-title">Training</h2>
+
+        <p class="section-subtitle">
+            Pharmaceutical industry training and practical exposure.
+        </p>
+
+
+        <div class="card">
+
+            <h3>Intra Pharm — Alexandria, Egypt</h3>
+
+            <div class="date">
+                Pharmaceutical Summer Training | September 13–16, 2026
+            </div>
+
+            <ul>
+                <li>
+                    Pharmaceutical industry training with exposure to
+                    Quality Assurance (QA) and plant operations.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Pharco Corporation — Alexandria, Egypt</h3>
+
+            <div class="date">
+                Pharmaceutical Summer Training | August 4–8, 2024 | 25 Hours
+            </div>
+
+            <ul>
+                <li>
+                    Training across Production, Engineering, Quality Control,
+                    and Warehouses.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Global for Science & Knowledge (GSK)</h3>
+
+            <div class="date">
+                Pharmaceutical Industry Training | 2025 | 45 Hours
+            </div>
+
+            <ul>
+                <li>
+                    Covered Quality Assurance (QA), Quality Control (QC),
+                    Research & Development (R&D), Product Development,
+                    Supply Chain, and Biotechnology.
+                </li>
+
+                <li>
+                    Included on-demand lectures and practical sessions.
+                </li>
+            </ul>
+
+        </div>
+
     </div>
 
-    <div class="item">
-      <h3 data-ar="التطوير المستمر" data-en="Continuous Development">Continuous Development</h3>
-      <p data-ar="أعمل على توسيع معرفتي في تطوير الويب والتسويق الرقمي ومجالات التكنولوجيا المرتبطة بأهدافي المهنية."
-         data-en="I am expanding my knowledge of web development, digital marketing, and technology fields aligned with my career goals.">
-        I am expanding my knowledge of web development, digital marketing, and technology fields aligned with my career goals.
-      </p>
+</section>
+
+
+<!-- Pharmaceutical Knowledge -->
+
+<section id="knowledge">
+
+    <div class="container">
+
+        <h2 class="section-title">Pharmaceutical Knowledge</h2>
+
+        <p class="section-subtitle">
+            Academic and training-based pharmaceutical knowledge.
+        </p>
+
+        <div class="two-column">
+
+            <ul class="simple-list">
+
+                <li>Pharmaceutical Manufacturing Fundamentals</li>
+                <li>Good Manufacturing Practices (GMP)</li>
+                <li>Good Documentation Practices (GDP)</li>
+                <li>Standard Operating Procedures (SOPs)</li>
+                <li>Quality Assurance (QA) Fundamentals</li>
+                <li>Quality Control (QC) Fundamentals</li>
+
+            </ul>
+
+            <ul class="simple-list">
+
+                <li>Pharmaceutical Production Processes</li>
+                <li>Pharmaceutical Product Development</li>
+                <li>Research & Development (R&D) Fundamentals</li>
+                <li>Pharmaceutical Engineering Fundamentals</li>
+                <li>Warehouse Operations</li>
+                <li>Supply Chain Fundamentals</li>
+                <li>Health & Safety in the Pharmaceutical Industry</li>
+
+            </ul>
+
+        </div>
+
     </div>
-  </section>
 
-  <section class="section" id="contact">
-    <h2 data-ar="تواصلي معي" data-en="Contact Me">Contact Me</h2>
+</section>
 
-    <p data-ar="يسعدني التواصل بشأن فرص التدريب والعمل والتعاون المهني."
-       data-en="I welcome communication about training, employment, and professional collaboration opportunities.">
-      I welcome communication about training, employment, and professional collaboration opportunities.
-    </p>
 
-    <div class="contact-grid">
-      <div class="contact-card">
-        <strong data-ar="البريد الإلكتروني" data-en="Email">Email</strong>
-        <a href="mailto:its.saramahmoud@gmail.com">its.saramahmoud@gmail.com</a>
-      </div>
+<!-- Courses -->
 
-      <div class="contact-card">
-        <strong data-ar="رقم الهاتف" data-en="Phone">Phone</strong>
-        <a href="tel:+201101874480" dir="ltr">+20 110 187 4480</a>
-      </div>
+<section id="courses">
 
-      <div class="contact-card">
-        <strong>LinkedIn</strong>
-        <a href="https://www.linkedin.com/in/sarah-mahmoud-885255374"
-           target="_blank" rel="noopener noreferrer">
-          View LinkedIn Profile
-        </a>
-      </div>
+    <div class="container">
 
-      <div class="contact-card">
-        <strong>GitHub</strong>
-        <a href="https://github.com/itssaramahmoud-jpg"
-           target="_blank" rel="noopener noreferrer">
-          View GitHub Profile
-        </a>
-      </div>
-    </div>
-  </section>
+        <h2 class="section-title">Courses & Certificates</h2>
 
-</main>
+        <p class="section-subtitle">
+            Professional, pharmaceutical, and technology-related learning.
+        </p>
 
-<footer>
-  <p>© 2026 Sarah Mahmoud Abdallah</p>
-  <p data-ar="التعلم المستمر خطوة نحو مستقبل أفضل."
-     data-en="Continuous learning is a step toward a better future.">
-    Continuous learning is a step toward a better future.
-  </p>
-</footer>
 
-<script>
-(function () {
-  const langBtn = document.getElementById("langBtn");
+        <div class="card">
 
-  function setLanguage(lang) {
-    const isArabic = lang === "ar";
+            <h3>Future Pharma Training Academy — 2025</h3>
 
-    document.documentElement.lang = lang;
-    document.documentElement.dir = isArabic ? "rtl" : "ltr";
+            <ul>
+                <li>
+                    Training in QA, QC Laboratory, R&D Laboratory,
+                    Engineering, Production Area & Warehouse — June 30, 2025.
+                </li>
 
-    document.querySelectorAll("[data-ar][data-en]").forEach(function (element) {
-      element.textContent = element.getAttribute("data-" + lang);
-    });
+                <li>
+                    Good Documentation Practices (GDP) — June 18, 2025.
+                </li>
 
-    langBtn.textContent = isArabic ? "English" : "العربية";
-    document.title = isArabic
-      ? "سارة محمود عبد الله | الملف الشخصي"
-      : "Sarah Mahmoud Abdallah | Portfolio";
-  }
+                <li>
+                    Good Manufacturing Practices (GMP) — July 15, 2025.
+                </li>
 
-  langBtn.addEventListener("click", function () {
-    const nextLang = document.documentElement.lang === "ar" ? "en" : "ar";
-    setLanguage(nextLang);
-  });
+                <li>
+                    Health & Safety in a Pharmaceutical Industry —
+                    May 12, 2025.
+                </li>
+            </ul>
 
-  setLanguage("en");
-})();
-</script>
+        </div>
 
-</body>
-  </html>
-        
+
+        <div class="card">
+
+            <h3>HP LIFE — 2025</h3>
+
+            <ul>
+                <li>
+                    Artificial Intelligence for Beginners —
+                    January 30, 2025.
+                </li>
+
+                <li>
+                    Email for Work — February 4, 2025.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Mind Luster — 2025</h3>
+
+            <ul>
+                <li>
+                    Soft Skills — February 3, 2025 | 1 Hour.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>M3aarf — 2025</h3
