@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sarah Mahmoud Abdallah | Pharmaceutical Production Technology</title>
+
+  <meta name="description"
+    content="Sarah Mahmoud Abdallah - Pharmaceutical Production Technology Student">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f9ff;
+      color: #24344d;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    header {
+      background: #102b55;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      min-height: 75px;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 22px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #8ec5ff;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      background: linear-gradient(
+        135deg,
+        #173c70,
+        #214f8d
+      );
+
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .profile-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 35px;
+
+      background: #dceaff;
+      color: #102b55;
+
+      border: 5px solid white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 55px;
+      font-weight: bold;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      color: #bcdcff;
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #eef6ff;
+    }
+
+    .hero-location {
+      margin-top: 20px;
+      color: #c7ddf7;
+      font-size: 15px;
+    }
+
+    /* ================= GENERAL ================= */
+
+    section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      color: #153b70;
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 4px;
+      background: #5597e8;
+      margin: 12px auto 0;
+      border-radius: 5px;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      background: #f7fbff;
+      border: 1px solid #dce8f5;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 8px 25px rgba(27,72,125,0.06);
+    }
+
+    .about-box p {
+      color: #53647a;
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .about-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ================= SKILLS ================= */
+
+    .skills {
+      background: #f5f9ff;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .skill-box {
+      background: white;
+      border-radius: 17px;
+      padding: 28px;
+      border: 1px solid #dce8f5;
+      box-shadow: 0 8px 25px rgba(27,72,125,0.06);
+    }
+
+    .skill-box h3 {
+      color: #153b70;
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .skill-box ul {
+      list-style: none;
+    }
+
+    .skill-box li {
+      color: #56677c;
+      padding: 7px 0;
+      border-bottom: 1px solid #edf2f8;
+      font-size: 14px;
+    }
+
+    .skill-box li:last-child {
+      border-bottom: none;
+    }
+
+    .skill-box li::before {
+      content: "✓";
+      color: #327bd1;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+      background: white;
+    }
+
+    .experience-box {
+      max-width: 850px;
+      margin: auto;
+      background: #f7fbff;
+      border: 1px solid #dce8f5;
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 8px 25px rgba(27,72,125,0.06);
+    }
+
+    .experience-box h3 {
+      color: #153b70;
+      font-size: 23px;
+      margin-bottom: 5px;
+    }
+
+    .experience-date {
+      color: #327bd1;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .experience-box ul {
+      padding-left: 20px;
+      color: #56677c;
+    }
+
+    .experience-box li {
+      margin-bottom: 7px;
+    }
+
+    /* ================= EDUCATION ================= */
+
+    .education {
+      background: #f5f9ff;
+    }
+
+    .education-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+
+      background: white;
+      border: 1px solid #dce8f5;
+      border-radius: 18px;
+      padding: 40px;
+
+      box-shadow: 0 8px 25px rgba(27,72,125,0.07);
+    }
+
+    .education-box h3 {
+      color: #153b70;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .education-box .major {
+      color: #327bd1;
+      font-size: 19px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .education-box p {
+      color: #617086;
+      margin-bottom: 7px;
+    }
+
+    .graduation {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: #e9f3ff;
+      color: #2469b7;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* ================= TRAINING ================= */
+
+    .training {
+      background: white;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .training-card {
+      background: #f7fbff;
+      border: 1px solid #dce8f5;
+      border-radius: 17px;
+      padding: 28px;
+      box-shadow: 0 8px 25px rgba(27,72,125,0.05);
+    }
+
+    .training-card h3 {
+      color: #153b70;
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+
+    .training-date {
+      color: #327bd1;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .training-card p {
+      color: #5d6d81;
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    /* ================= COURSES ================= */
+
+    .courses {
+      background: #f5f9ff;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .course {
+      background: white;
+      padding: 24px;
+      border: 1px solid #dce8f5;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(27,72,125,0.05);
+      transition: 0.3s;
+    }
+
+    .course:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(27,72,125,0.09);
+    }
+
+    .course h3 {
+      color: #153b70;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .course p {
+      color: #3270bd;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* ================= PROJECT ================= */
+
+    .project {
+      background: white;
+    }
+
+    .project-box {
+      max-width: 900px;
+      margin: auto;
+      background: #f7fbff;
+      border: 1px solid #dce8f5;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 8px 25px rgba(27,72,125,0.06);
+    }
+
+    .project-box h3 {
+      color: #153b70;
+      font-size: 29px;
+      margin-bottom: 8px;
+    }
+
+    .project-subtitle {
+      color: #327bd1;
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .project-box p {
+      color: #56677c;
+      margin-bottom: 12px;
+    }
+
+    .project-box ul {
+      padding-left: 22px;
+      color: #56677c;
+      margin-top: 15px;
+    }
+
+    .project-box li {
+      margin-bottom: 8px;
+    }
+
+    /* ================= INTERESTS ================= */
+
+    .interests {
+      background: #f5f9ff;
+    }
+
+    .interest-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .interest {
+      background: white;
+      color: #204d82;
+      border: 1px solid #d4e4f5;
+      padding: 10px 17px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-intro {
+      text-align: center;
+      color: #617086;
+      max-width: 700px;
+      margin: -20px auto 40px;
+      font-size: 16px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: #f7fbff;
+      border: 1px solid #dce8f5;
+      border-radius: 16px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(27,72,125,0.09);
+    }
+
+    .contact-card h3 {
+      color: #153b70;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: #3270bd;
+      font-size: 14px;
+      word-break: break-word;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #102b55;
+      color: #c7d8ec;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 850px) {
+
+      .skills-grid,
+      .cards,
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      nav {
+        flex-direction: column;
+        padding: 18px 15px;
+      }
+
+      .logo {
+        margin-bottom: 12px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 65px 18px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .profile-circle {
+        width: 125px;
+        height: 125px;
+        font-size: 45px;
+      }
+
+      .skills-grid,
+      .cards,
+      .course-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 17px;
+      }
+
+      .section-title {
+        font-size: 29px;
+      }
+
+      .about-box,
+      .experience-box,
+      .education-box,
+      .project-box {
+        padding: 25px;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header>
+
+    <nav>
+
+      <a href="#home" class="logo">
+        Sarah.
+      </a>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#education">Education</a>
+        </li>
+
+        <li>
+          <a href="#training">Training</a>
+        </li>
+
+        <li>
+          <a href="#courses">Courses</a>
+        </li>
+
+        <li>
+          <a href="#project">Project</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="profile-circle">
+        S
+      </div>
+
+      <h1>
+        Sarah Mahmoud Abdallah
+      </h1>
+
+      <h2>
+        Pharmaceutical Production Technology Student
+      </h2>
+
+      <p>
+        Interested in pharmaceutical manufacturing, quality assurance,
+        quality control, product development, research and development,
+        customer support, web development, AI and automation.
+      </p>
+
+      <div class="hero-location">
+        📍 Alexandria, Egypt
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        About Me
+      </h2>
+
+      <div class="about-box">
+
+        <p>
+          I am a fourth-year Pharmaceutical Production Technology student
+          at Borg El Arab Technological University.
+        </p>
+
+        <p>
+          I am interested in building a career in pharmaceutical factories
+          and companies, especially in Pharmaceutical Production, QA, QC,
+          GMP and pharmaceutical operations.
+        </p>
+
+        <p>
+          I have one year of pharmacy experience with exposure to customer
+          service, pharmaceutical products, customer inquiries,
+          communication and problem-solving.
+        </p>
+
+        <p>
+          I am a fast learner, ambitious and committed to continuous
+          learning and developing my professional and technical skills.
+        </p>
+
+        <p>
+          I am also interested in AI, automation, web development and
+          digital technologies.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+
+  <section class="skills" id="skills">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Skills
+      </h2>
+
+      <div class="skills-grid">
+
+
+        <!-- COMMUNICATION -->
+
+        <div class="skill-box">
+
+          <h3>
+            Communication & Soft Skills
+          </h3>
+
+          <ul>
+
+            <li>Communication Skills</li>
+
+            <li>Written Communication</li>
+
+            <li>Customer Service</li>
+
+            <li>Customer Engagement</li>
+
+            <li>Active Listening</li>
+
+            <li>Product Explanation</li>
+
+            <li>Problem-Solving</li>
+
+            <li>Adaptability</li>
+
+            <li>Teamwork & Collaboration</li>
+
+            <li>Fast Learning</li>
+
+            <li>Continuous Learning</li>
+
+            <li>Attention to Detail</li>
+
+            <li>Ambition</li>
+
+            <li>Responsibility</li>
+
+            <li>Time Management</li>
+
+            <li>Working Under Pressure</li>
+
+            <li>Creativity & Initiative</li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- TECHNICAL -->
+
+        <div class="skill-box">
+
+          <h3>
+            Technical Skills
+          </h3>
+
+          <ul>
+
+            <li>Microsoft Word — Basic</li>
+
+            <li>Microsoft Excel — Basic</li>
+
+            <li>Data Organization & Entry</li>
+
+            <li>C++ — Foundational</li>
+
+            <li>HTML — Learning</li>
+
+            <li>CSS — Learning</li>
+
+            <li>JavaScript — Learning</li>
+
+            <li>AI — Foundational</li>
+
+            <li>Automation — Learning Interest</li>
+
+            <li>Web Development — Learning</li>
+
+            <li>Digital Marketing — Foundational</li>
+
+            <li>Digital Technologies</li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- PHARMACEUTICAL -->
+
+        <div class="skill-box">
+
+          <h3>
+            Pharmaceutical Knowledge
+          </h3>
+
+          <ul>
+
+            <li>Pharmaceutical Manufacturing</li>
+
+            <li>Pharmaceutical Production Processes</li>
+
+            <li>GMP Fundamentals</li>
+
+            <li>GDP Fundamentals</li>
+
+            <li>SOPs</li>
+
+            <li>Quality Assurance — QA</li>
+
+            <li>Quality Control — QC</li>
+
+            <li>Product Development</li>
+
+            <li>R&D Fundamentals</li>
+
+            <li>Pharmaceutical Engineering</li>
+
+            <li>Warehouse Operations</li>
+
+            <li>Supply Chain Fundamentals</li>
+
+            <li>Health & Safety</li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EXPERIENCE ================= -->
+
+  <section class="experience" id="experience">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Experience
+      </h2>
+
+
+      <div class="experience-box">
+
+        <h3>
+          Pharmacy Experience
+        </h3>
+
+        <div class="experience-date">
+          One Year
+        </div>
+
+        <ul>
+
+          <li>
+            Customer service and interaction with customers.
+          </li>
+
+          <li>
+            Familiarity with pharmaceutical products.
+          </li>
+
+          <li>
+            Handling customer questions and inquiries.
+          </li>
+
+          <li>
+            Communication and problem-solving in a pharmacy environment.
+          </li>
+
+          <li>
+            Supporting positive customer experiences.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <br><br>
+
+
+      <div class="experience-box">
+
+        <h3>
+          Customer Communication
+        </h3>
+
+        <div class="experience-date">
+          Written Messages
+        </div>
+
+        <ul>
+
+          <li>
+            Communicated with customers through written messages.
+          </li>
+
+          <li>
+            Used clear and professional written communication.
+          </li>
+
+          <li>
+            Customer engagement and responding to inquiries.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+
+  <section class="education" id="education">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Education
+      </h2>
+
+      <div class="education-box">
+
+        <h3>
+          Borg El Arab Technological University
+        </h3>
+
+        <div class="major">
+          Pharmaceutical Production Technology
+        </div>
+
+        <p>
+          Borg El Arab City, Alexandria Governorate, Egypt
+        </p>
+
+        <p>
+          Fourth-Year Student
+        </p>
+
+        <span class="graduation">
+          Expected Graduation: 2027
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TRAINING ================= -->
+
+  <section class="training" id="training">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Training
+      </h2>
+
+      <div class="cards">
+
+
+        <div class="training-card">
+
+          <h3>
+            Intra Pharm
+          </h3>
+
+          <div class="training-date">
+            September 13–16, 2026
+          </div>
+
+          <p>
+            Alexandria, Egypt
+          </p>
+
+          <p>
+            Pharmaceutical Summer Training with exposure to
+            Quality Assurance and pharmaceutical plant operations.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <h3>
+            Pharco Corporation
+          </h3>
+
+          <div class="training-date">
+            August 4–8, 2024 | 25 Hours
+          </div>
+
+          <p>
+            Alexandria, Egypt
+          </p>
+
+          <p>
+            Pharmaceutical training covering Production,
+            Engineering, Quality Control and Warehouses.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <h3>
+            Global for Science & Knowledge
+          </h3>
+
+          <div class="training-date">
+            2025 | 45 Hours
+          </div>
+
+          <p>
+            Pharmaceutical Industry Training covering QA,
+            QC, R&D, Product Development, Supply Chain
+            and Biotechnology.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= COURSES ================= -->
+.courses {
+
+  background: #f5f9ff;
+
+}
+
+.course-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+
+}
+
+.course {
+
+  background: white;
+
+  padding: 24px;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(27,72,125,0.05);
+
+  transition: 0.3s;
+
+}
+
+.course:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(27,72,125,0.09);
+
+}
+
+.course h3 {
+
+  color: #153b70;
+
+  font-size: 17px;
+
+  margin-bottom: 8px;
+
+}
+
+.course p {
+
+  color: #3270bd;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+}
+
+
+/* ================= PROJECT ================= */
+
+.project {
+
+  background: white;
+
+}
+
+.project-box {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  background: #f7fbff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  box-shadow: 0 8px 25px rgba(27,72,125,0.06);
+
+}
+
+.project-box h3 {
+
+  color: #153b70;
+
+  font-size: 29px;
+
+  margin-bottom: 8px;
+
+}
+
+.project-subtitle {
+
+  color: #327bd1;
+
+  font-weight: bold;
+
+  font-size: 17px;
+
+  margin-bottom: 20px;
+
+}
+
+.project-box p {
+
+  color: #56677c;
+
+  margin-bottom: 12px;
+
+}
+
+.project-box ul {
+
+  padding-left: 22px;
+
+  color: #56677c;
+
+  margin-top: 15px;
+
+}
+
+.project-box li {
+
+  margin-bottom: 8px;
+
+}
+
+
+/* ================= INTERESTS ================= */
+
+.interests {
+
+  background: #f5f9ff;
+
+}
+
+.interest-list {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 12px;
+
+}
+
+.interest {
+
+  background: white;
+
+  color: #204d82;
+
+  border: 1px solid #d4e4f5;
+
+  padding: 10px 17px;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+
+  background: white;
+
+}
+
+.contact-intro {
+
+  text-align: center;
+
+  color: #617086;
+
+  max-width: 700px;
+
+  margin: -20px auto 40px;
+
+  font-size: 16px;
+
+}
+
+.contact-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+}
+
+.contact-card {
+
+  background: #f7fbff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  transition: 0.3s;
+
+}
+
+.contact-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(27,72,125,0.09);
+
+}
+
+.contact-card h3 {
+
+  color: #153b70;
+
+  font-size: 18px;
+
+  margin-bottom: 8px;
+
+}
+
+.contact-card p {
+
+  color: #3270bd;
+
+  font-size: 14px;
+
+  word-break: break-word;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+  background: #102b55;
+
+  color: #c7d8ec;
+
+  text-align: center;
+
+  padding: 25px 15px;
+
+  font-size: 13px;
+
+}
+
+footer strong {
+
+  color: white;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+  .skills-grid,
+
+  .cards,
+
+  .contact-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .hero h1 {
+
+    font-size: 44px;
+
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  nav {
+
+    flex-direction: column;
+
+    padding: 18px 15px;
+
+  }
+
+  .logo {
+
+    margin-bottom: 12px;
+
+  }
+
+  .nav-links {
+
+    gap: 13px;
+
+  }
+
+  .nav-links a {
+
+    font-size: 13px;
+
+  }
+
+  .hero {
+
+    padding: 65px 18px;
+
+  }
+
+  .hero h1 {
+
+    font-size: 38px;
+
+  }
+
+  .hero h2 {
+
+    font-size: 21px;
+
+  }
+
+  .hero p {
+
+    font-size: 16px;
+
+  }
+
+  .profile-circle {
+
+    width: 125px;
+
+    height: 125px;
+
+    font-size: 45px;
+
+  }
+
+  .skills-grid,
+
+  .cards,
+
+  .course-grid,
+
+  .contact-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  section {
+
+    padding: 60px 17px;
+
+  }
+
+  .section-title {
+
+    font-size: 29px;
+
+  }
+
+  .about-box,
+
+  .experience-box,
+
+  .education-box,
+
+  .project-box {
+
+    padding: 25px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+  <nav>
+
+    <a href="#home" class="logo">
+
+      Sarah.
+
+    </a>
+
+    <ul class="nav-links">
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#skills">Skills</a></li>
+
+      <li><a href="#experience">Experience</a></li>
+
+      <li><a href="#education">Education</a></li>
+
+      <li><a href="#training">Training</a></li>
+
+      <li><a href="#courses">Courses</a></li>
+
+      <li><a href="#project">Project</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="profile-circle">
+
+      S
+
+    </div>
+
+    <h1>
+
+      Sarah Mahmoud Abdallah
+
+    </h1>
+
+    <h2>
+
+      Pharmaceutical Production Technology Student
+
+    </h2>
+
+    <p>
+
+      Interested in pharmaceutical manufacturing, quality assurance,
+
+      quality control, product development, research and development,
+
+      customer support, web development, AI and automation.
+
+    </p>
+
+    <div class="hero-location">
+
+      📍 Alexandria, Egypt
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      About Me
+
+    </h2>
+
+    <div class="about-box">
+
+      <p>
+
+        I am a fourth-year Pharmaceutical Production Technology student
+
+        at Borg El Arab Technological University.
+
+      </p>
+
+      <p>
+
+        I am interested in building a career in pharmaceutical factories
+
+        and companies, especially in Pharmaceutical Production, QA, QC,
+
+        GMP and pharmaceutical operations.
+
+      </p>
+
+      <p>
+
+        I have one year of pharmacy experience with exposure to customer
+
+        service, pharmaceutical products, customer inquiries,
+
+        communication and problem-solving.
+
+      </p>
+
+      <p>
+
+        I am a fast learner, ambitious and committed to continuous
+
+        learning and developing my professional and technical skills.
+
+      </p>
+
+      <p>
+
+        I am also interested in AI, automation, web development and
+
+        digital technologies.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Skills
+
+    </h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-box">
+
+        <h3>
+
+          Communication & Soft Skills
+
+        </h3>
+
+        <ul>
+
+          <li>Communication Skills</li>
+
+          <li>Written Communication</li>
+
+          <li>Customer Service</li>
+
+          <li>Customer Engagement</li>
+
+          <li>Active Listening</li>
+
+          <li>Product Explanation</li>
+
+          <li>Problem-Solving</li>
+
+          <li>Adaptability</li>
+
+          <li>Teamwork & Collaboration</li>
+
+          <li>Fast Learning</li>
+
+          <li>Continuous Learning</li>
+
+          <li>Attention to Detail</li>
+
+          <li>Ambition</li>
+
+          <li>Responsibility</li>
+
+          <li>Time Management</li>
+
+          <li>Working Under Pressure</li>
+
+          <li>Creativity & Initiative</li>
+
+        </ul>
+
+      </div>
+
+      <div class="skill-box">
+
+        <h3>
+
+          Technical Skills
+
+        </h3>
+
+        <ul>
+
+          <li>Microsoft Word — Basic</li>
+
+          <li>Microsoft Excel — Basic</li>
+
+          <li>Data Organization & Entry</li>
+
+          <li>C++ — Foundational</li>
+
+          <li>HTML — Learning</li>
+
+          <li>CSS — Learning</li>
+
+          <li>JavaScript — Learning</li>
+
+          <li>AI — Foundational</li>
+
+          <li>Automation — Learning Interest</li>
+
+          <li>Web Development — Learning</li>
+
+          <li>Digital Marketing — Foundational</li>
+
+          <li>Digital Technologies</li>
+
+        </ul>
+
+      </div>
+
+      <div class="skill-box">
+
+        <h3>
+
+          Pharmaceutical Knowledge
+
+        </h3>
+
+        <ul>
+
+          <li>Pharmaceutical Manufacturing</li>
+
+          <li>Pharmaceutical Production Processes</li>
+
+          <li>GMP Fundamentals</li>
+
+          <li>GDP Fundamentals</li>
+
+          <li>SOPs</li>
+
+          <li>Quality Assurance — QA</li>
+
+          <li>Quality Control — QC</li>
+
+          <li>Product Development</li>
+
+          <li>R&D Fundamentals</li>
+
+          <li>Pharmaceutical Engineering</li>
+
+          <li>Warehouse Operations</li>
+
+          <li>Supply Chain Fundamentals</li>
+
+          <li>Health & Safety</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience" id="experience">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Experience
+
+    </h2>
+
+    <div class="experience-box">
+
+      <h3>
+
+        Pharmacy Experience
+
+      </h3>
+
+      <div class="experience-date">
+
+        One Year
+
+      </div>
+
+      <ul>
+
+        <li>Customer service and interaction with customers.</li>
+
+        <li>Familiarity with pharmaceutical products.</li>
+
+        <li>Handling customer questions and inquiries.</li>
+
+        <li>Communication and problem-solving in a pharmacy environment.</li>
+
+        <li>Supporting positive customer experiences.</li>
+
+      </ul>
+
+    </div>
+
+    <br><br>
+
+    <div class="experience-box">
+
+      <h3>
+
+        Customer Communication
+
+      </h3>
+
+      <div class="experience-date">
+
+        Written Messages
+
+      </div>
+
+      <ul>
+
+        <li>
+
+          Communicated with customers through written messages.
+
+        </li>
+
+        <li>
+
+          Used clear and professional written communication.
+
+        </li>
+
+        <li>
+
+          Customer engagement and responding to inquiries.
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education" id="education">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Education
+
+    </h2>
+
+    <div class="education-box">
+
+      <h3>
+
+        Borg El Arab Technological University
+
+      </h3>
+
+      <div class="major">
+
+        Pharmaceutical Production Technology
+
+      </div>
+
+      <p>
+
+        Borg El Arab City, Alexandria Governorate, Egypt
+
+      </p>
+
+      <p>
+
+        Fourth-Year Student
+
+      </p>
+
+      <span class="graduation">
+
+        Expected Graduation: 2027
+
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= TRAINING ================= -->
+
+<section class="training" id="training">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Training
+
+    </h2>
+
+    <div class="cards">
+
+      <div class="training-card">
+
+        <h3>
+
+          Intra Pharm
+
+        </h3>
+
+        <div class="training-date">
+
+          September 13–16, 2026
+
+        </div>
+
+        <p>
+
+          Alexandria, Egypt
+
+        </p>
+
+        <p>
+
+          Pharmaceutical Summer Training with exposure to
+
+          Quality Assurance and pharmaceutical plant operations.
+
+        </p>
+
+      </div>
+
+      <div class="training-card">
+
+        <h3>
+
+          Pharco Corporation
+
+        </h3>
+
+        <div class="training-date">
+
+          August 4–8, 2024 | 25 Hours
+
+        </div>
+
+        <p>
+
+          Alexandria, Egypt
+
+        </p>
+
+        <p>
+
+          Pharmaceutical training covering Production,
+
+          Engineering, Quality Control and Warehouses.
+
+        </p>
+
+      </div>
+
+      <div class="training-card">
+
+        <h3>
+
+          Global for Science & Knowledge
+
+        </h3>
+
+        <div class="training-date">
+
+          2025 | 45 Hours
+
+        </div>
+
+        <p>
+
+          Pharmaceutical Industry Training covering QA,
+
+          QC, R&D, Product Development, Supply Chain
+
+          and Biotechnology.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="courses" id="courses">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Courses & Certificates
+
+    </h2>
+
+    <div class="course-grid">
+
+      <div class="course">
+
+        <h3>
+
+          QA / QC Laboratory / R&D Laboratory /
+
+          Engineering / Production Area / Warehouse
+
+        </h3>
+
+        <p>
+
+          Future Pharma Training Academy — June 30, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Good Distribution Practice — GDP
+
+        </h3>
+
+        <p>
+
+          Future Pharma Training Academy — June 18, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Good Manufacturing Practice — GMP
+
+        </h3>
+
+        <p>
+
+          Future Pharma Training Academy — July 15, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Health & Safety
+
+        </h3>
+
+        <p>
+
+          Future Pharma Training Academy — May 12, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          AI for Beginners
+
+        </h3>
+
+        <p>
+
+          HP LIFE — January 30, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Email for Work
+
+        </h3>
+
+        <p>
+
+          HP LIFE — February 4, 2025
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Soft Skills
+
+        </h3>
+
+        <p>
+
+          Mind Luster — February 3, 2025 | 1 Hour
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Writing
+
+        </h3>
+
+        <p>
+
+          M3aarf — February 8, 2025 | 9.92 Hours
+
+        </p>
+
+      </div>
+
+      <div class="course">
+
+        <h3>
+
+          Fundamentals of Digital Marketing
+
+        </h3>
+
+        <p>
+
+          Google Digital Marketing — Completed February 6, 2025
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROJECT ================= -->
+
+<section class="project" id="project">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Project
+
+    </h2>
+
+    <div class="project-box">
+
+      <h3>
+
+        BurnaCure
+
+      </h3>
+
+      <div class="project-subtitle">
+
+        Burn Treatment Patch Development Project
+
+      </div>
+
+      <p>
+
+        A team project in the initial development phase of a patch
+
+        concept intended for burn treatment.
+
+      </p>
+
+      <p>
+
+        The project focused on an initial product concept and
+
+        preliminary components.
+
+      </p>
+
+      <ul>
+
+        <li>
+
+          Participated in the initial product development concept.
+
+        </li>
+
+        <li>
+
+          Worked with the team during the initial project phase.
+
+        </li>
+
+        <li>
+
+          The project received positive recognition and notable placement.
+
+        </li>
+
+        <li>
+
+          Further development, prototype implementation and appropriate
+
+          testing are required before any real-world medical use.
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= INTERESTS ================= -->
+
+<section class="interests" id="interests">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Interests
+
+    </h2>
+
+    <div class="interest-list">
+
+      <span class="interest">
+
+        Pharmaceutical Manufacturing
+
+      </span>
+
+      <span class="interest">
+
+        Pharmaceutical Production
+
+      </span>
+
+      <span class="interest">
+
+        Quality Assurance
+
+      </span>
+
+      <span class="interest">
+
+        Quality Control
+
+      </span>
+
+      <span class="interest">
+
+        Product Development
+
+      </span>
+
+      <span class="interest">
+
+        Research & Development
+
+      </span>
+
+      <span class="interest">
+
+        Pharmaceutical Engineering
+
+      </span>
+
+      <span class="interest">
+
+        Administrative Support
+
+      </span>
+
+      <span class="interest">
+
+        Data Entry
+
+      </span>
+
+      <span class="interest">
+
+        Customer Support
+
+      </span>
+
+      <span class="interest">
+
+        Customer Relations
+
+      </span>
+
+      <span class="interest">
+
+        AI
+
+      </span>
+
+      <span class="interest">
+
+        Automation
+
+      </span>
+
+      <span class="interest">
+
+        Web Development
+
+      </span>
+
+      <span class="interest">
+
+        Digital Technologies
+
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Contact Me
+
+    </h2>
+
+    <p class="contact-intro">
+
+      I welcome communication about training, employment,
+
+      professional opportunities and collaboration.
+
+    </p>
+
+    <div class="contact-grid">
+
+      <a
+
+        class="contact-card"
+
+        href="mailto:its.saramahmoud@gmail.com"
+
+      >
+
+        <h3>
+
+          Email
+
+        </h3>
+
+        <p>
+
+          its.saramahmoud@gmail.com
+
+        </p>
+
+      </a>
+
+      <a
+
+        class="contact-card"
+
+        href="tel:+201101874480"
+
+      >
+
+        <h3>
+
+          Phone
+
+        </h3>
+
+        <p>
+
+          +20 110 187 4480
+
+        </p>
+
+      </a>
+
+      <a
+
+        class="contact-card"
+
+        href="https://wa.me/201101874480"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        <h3>
+
+          WhatsApp
+
+        </h3>
+
+        <p>
+
+          +20 110 187 4480
+
+        </p>
+
+      </a>
+
+      <a
+
+        class="contact-card"
+
+        href="https://www.linkedin.com/in/sarah-mahmoud-885255374/"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        <h3>
+
+          LinkedIn
+
+        </h3>
+
+        <p>
+
+          View LinkedIn Profile
+
+        </p>
+
+      </a>
+
+      <a
+
+        class="contact-card"
+
+        href="https://github.com/itssaramahmoud-jpg"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        <h3>
+
+          GitHub
+
+        </h3>
+
+        <p>
+
+          View GitHub Profile
+
+        </p>
+
+      </a>
+
+      <a
+
+        class="contact-card"
+
+        href="https://itssaramahmoud-jpg.github.io/"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        <h3>
+
+          Portfolio
+
+        </h3>
+
+        <p>
+
+          itssaramahmoud-jpg.github.io
+
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <p>
+
+    © 2026 <strong>Sarah Mahmoud Abdallah</strong>
+
+  </p>
+
+  <p>
+
+    Pharmaceutical Production Technology Student
+
+  </p>
+
+</footer>
+
+
+</body>
+
+      </html>
+     
